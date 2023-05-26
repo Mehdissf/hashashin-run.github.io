@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS-spel</title>
+  </head>
+  <body>
+    <canvas id="canvas">
+      <div id="player-info"></div>
+    </canvas>
+    <code id="svårighetsgradvisare"
+      >Svårighetsgraden är inställd på: medel</code
+    >
+    <h3 id="ramla_inte">RAMLA INTE BARA!</h3>
+    <button id="start">Starta</button>
+    <div id="Skärmen_som_visas_när_Player_dör" class="hidden">
+      <code>Du dog!</code>
+      <p id="xpDisplay"></p>
+      <button id="fortsättknapp">Börja om</button>
+    </div>
+    <div id="menu">
+      <label for="svårighetsgrad">Svårighetsgrad:</label>
+      <select id="svårighetsgrad">
+        <option value="lätt">Lätt</option>
+        <option value="medel">Medel</option>
+        <option value="svår">Svår</option>
+        <option value="extrem">Extremt</option>
+      </select>
+      <button onclick="spara()">Spara</button>
+    </div>
+    <audio autoplay loop id="musik">
+      <source src="/musik/ingame .mp3" type="audio/mpeg" />
+    </audio>
+    <script src="script/menu.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/Player.js"></script>
+    <script src="script/kollisionBlockar.js"></script>
+  </body>
+</html>

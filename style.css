@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+canvas {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+#start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: black;
+  padding: 10px 20px;
+  background-color: "transparent";
+}
+#start:hover {
+  background-color: rgb(0, 162, 255);
+  transition: all 200ms;
+}
+#ramla_inte {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  font-size: 28px;
+  color: black;
+  padding: 10px 20px;
+}
+#svårighetsgradvisare {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -280%);
+  font-size: 28px;
+  color: black;
+  padding: 10px 20px;
+}
+#menu {
+  position: absolute;
+  left: 40%;
+  top: 20px;
+
+  font-size: 28px;
+  color: black;
+}
+
+#Skärmen_som_visas_när_Player_dör {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+#Skärmen_som_visas_när_Player_dör.hidden {
+  display: none;
+}
